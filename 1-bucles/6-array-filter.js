@@ -32,4 +32,20 @@ let gente = [{
         edad: 10
     },
 ]
+var contador = 0;
+var result = [];
+for (var i = 0; i < gente.length; i++) {
+    var the_name = gente[i].nombre;
+    var medida = the_name.length;
+    if (medida === 4) {
+        result[contador] = {
+            nombre: gente[i].nombre,
+            edad: gente[i].edad,
+        }
+        contador++;
+    }
+}
+// let elarray = gente.filter(personas => personas.nombre.length ===4);
 
+
+console.log(result);

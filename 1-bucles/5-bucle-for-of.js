@@ -33,3 +33,24 @@ let gente = [{
         edad: 10
     },
 ]
+var contador = 0;
+var the_name;
+var new_gente = [];
+//console.log(the_name.charAt(0));
+for (var i = 0; i < gente.length; i++) {
+    the_name = gente[i].nombre;
+
+    if (the_name.charAt(0) === "J") {
+        new_gente[contador] = {
+            nombre: gente[i].nombre,
+            edad: gente[i].edad,
+
+        }
+
+
+        contador++;
+    }
+
+
+}
+console.log(new_gente);

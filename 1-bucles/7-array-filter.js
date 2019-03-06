@@ -35,3 +35,5 @@ let gente = [{
     },
 ]
 
+let elarray = gente.filter(personas => personas.nombre[0] === "J" && personas.edad < 40);
+console.log(elarray);
