@@ -12,8 +12,29 @@
 
 let transformaArrayEnOtraConSusLongitudes = (arrayDeStrings) => {
     let arrayDeLongitudes = [];
-    // Aquí tu código.  Desde aquí:
+    // console.log(arrayDeStrings.length);
 
+    // Aquí tu código.  Desde aquí:
+    if (typeof arrayDeStrings === 'object' && arrayDeStrings.length >= 0) {
+        //   console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+
+        for (var i = 0; i < arrayDeStrings.length; i++) {
+            //console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+
+            arrayDeLongitudes[i] = arrayDeStrings[i].length;
+            console.log("TOTAL:" + arrayDeStrings);
+            /* for (var j = 0; j < arrayDeStrings[i].lenght;j++){
+                 arrayDeLongitudes[i] = arrayDeStrings
+
+
+             }*/
+
+
+
+        }
+    } else {
+        return "Debo ser ejecutada con un array";
+    }
     // Hasta aquí.
     return arrayDeLongitudes
 }

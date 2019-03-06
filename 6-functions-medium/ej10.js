@@ -13,7 +13,22 @@
 // Ha de pasar los test adjuntados.
 
 // Aquí tu código.  Desde aquí:
-const conCuantosParametrosMeHanEjecutado;
+//const conCuantosParametrosMeHanEjecutado();
+
+//conCuantosParametrosMeHanEjecutado();
+
+function conCuantosParametrosMeHanEjecutado(c) {
+
+    return c.length;
+}
+//conCuantosParametrosMeHanEjecutado();
+
+/*function conCuantosParametrosMeHanEjecutado(rest) {
+    console.log(rest);
+    //  return something.length
+
+
+}*/
 // Hasta aquí.
 
 
@@ -26,4 +41,4 @@ let test = require('../test.js');
 
 test(conCuantosParametrosMeHanEjecutado, [], 0);
 test(conCuantosParametrosMeHanEjecutado, ['hola', 'caracola'], 2);
-test(conCuantosParametrosMeHanEjecutado, ['33', '44',' '], 3);
+test(conCuantosParametrosMeHanEjecutado, ['33', '44', ' '], 3);
