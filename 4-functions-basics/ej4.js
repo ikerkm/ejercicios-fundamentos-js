@@ -7,10 +7,21 @@
 // Si recibe un string vacío debe devolver 'Debo ser ejecutada con un string no vacío'
 
 // Ha de pasar los test adjuntados.
+var texto = Math.random() > 0.5 ? Math.random() : "The String";
 
 let ultimoCaracter = (texto) => {
     // Aquí tu código.  Desde aquí:
-  
+    if (typeof texto === 'string') {
+        if (texto === "") {
+            return "Debo ser ejecutada con un string no vacío";
+        } else {
+            var el_char = texto.charAt(texto.length - 1);
+            return el_char;
+        }
+
+    } else {
+        return "Debo ser ejecutada con un string";
+    }
 
 
     // Hasta aquí.

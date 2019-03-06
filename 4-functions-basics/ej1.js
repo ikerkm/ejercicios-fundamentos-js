@@ -5,10 +5,19 @@
 // devolver el string 'Debo ser ejecutada con un numero'
 
 // Ha de pasar los test adjuntados.
+var numero = 5;
+
+
 
 let duplicaNumero = (numero) => {
     // Aquí tu código.  Desde aquí:
-   
+    if (typeof numero === 'number') {
+        numero = numero * 2;
+        return numero;
+    } else {
+        var el_string = "Debo ser ejecutada con un numero";
+        return el_string;
+    }
 
 
     // Hasta aquí.

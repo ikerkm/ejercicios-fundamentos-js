@@ -5,10 +5,19 @@
 // devolver el string 'Debo ser ejecutada con un numero'
 
 // Ha de pasar los test adjuntados.
+
+var numero = Math.random() > 0.5 ? Math.random() : "The String";
 let convierteString = (numero) => {
     // Aquí tu código.  Desde aquí:
+    if (typeof numero === 'number') {
+        var elstring = numero + "";
+        return elstring;
 
-    
+    } else {
+        var mensaje = "Debo ser ejecutada con un numero";
+        return mensaje;
+    }
+
     // Hasta aquí.
 }
 

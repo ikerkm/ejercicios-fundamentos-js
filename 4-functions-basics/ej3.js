@@ -8,9 +8,20 @@
 
 // Ha de pasar los test adjuntados.
 
+var texto = Math.random() > 0.5 ? Math.random() : "The String";
 let caracterInicial = (texto) => {
     // Aquí tu código.  Desde aquí:
-    
+    if (typeof texto === 'string') {
+        if (texto === "") {
+            return "Debo ser ejecutada con un string no vacío";
+        } else {
+            var el_char = texto.charAt(0);
+            return el_char;
+        }
+
+    } else {
+        return "Debo ser ejecutada con un string";
+    }
     // Hasta aquí.
 }
 
